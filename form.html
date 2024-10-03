@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title> form</title>
+        <style>
+             h1{font-size:50px;
+                color:cornflowerblue;
+               
+                text-align: center; }
+
+            
+            h2{ font-size:20px;
+                color:black;
+                background-color:antiquewhite;
+                text-align:center;
+                
+            
+        }
+        input ,select, textarea{
+            border-radius: 5px;
+            padding: 3px;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <h2>
+            
+        <form>
+            <h1> FORM</h1>
+            <label for="first name">First name:</label>
+            <input type="text" placeholder="enter first name" id="first name" required><br><br>
+
+            <label for="last name">Last name:</label>
+            <input type="text" placeholder="enter last name" disabled><br><br>
+
+            <label for="email">Enter email id:</label>
+            <input type="email" placeholder="enter email id" id="email"><br><br>
+
+            <label>password:</label>
+            <input type="password" placeholder="enter your password"><br><br>
+
+            <label for="age">Enter your age:</label>
+            <input type="number" placeholder="age" id="age"><br><br>
+
+            <label for="dob">Enter your DOB:</label>
+            <input type="date"  id="dob"><br><br>
+
+            <label for="gender">select your gender</label>
+            <input type="radio" value="male" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" value="Female" id="female" name="gender">
+            <label for="female">Female</label><br><br>
+
+            <label for="country">select country</label>
+            <select id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+
+            </select> <br><br>
+            <textarea placeholder="explain your interest in registeration" rows="5" column="50"></textarea><br><br>
+
+            <label for="file">upload file:</label>
+            <input type="file" value="file" id="file"><br><br>
+
+             
+            <input type="checkbox" value="agree" id="terms">
+            <label for="terms">I agree your terms and condition</label><br><br>
+
+            <br> <input type="submit"><br>
+            <input type="reset">
+
+
+
+
+
+
+
+        </form>
+    </h2>
+    </body> 
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Company HR Portal</title>
+    <link rel="icon" href="images/download.png">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            padding: 0%;
+            background-color:lightblue;
+        }
+        header ,footer{
+            background-color:cadetblue;
+            color: aquamarine;
+            text-align: center;
+            padding: 2px;
+        }
+        .navitem{
+            display:inline;
+            padding: 20px;
+            
+        }
+        .navitem a{
+            text-decoration:none;
+            color: aquamarine;
+            
+            
+        }
+        .registerform{
+            width:max-content;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        table{
+            width:100%;
+            margin-right:auto;
+            margin-left:auto;
+            border-collapse: collapse;
+        }
+        .employeetable{         
+            text-align: center;            
+        }
+        /* niche class dekar upar us particular section ki styling kar sakte hai . laga ke*/
+        th ,td{
+            border:1px solid blueviolet;
+            padding:9px;
+        }
+        .contactus{
+            text-align: center;
+        }
+        .img{
+            margin-top: 64px;
+          
+            transform: translateX(64px);
+            
+        }
+        input ,select{
+            border-radius: 10px;
+            padding: 3px;
+        }
+
+
+
+    </style>
+   
+</head>
+<body style="overflow-x: hidden;">
+    <header>
+        <h1>Welcome to company HR portal</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#Employee-registration">Employee registration</a></li>
+                <li  class="navitem"><a href="#Employee-directory">Employee directory</a></li>
+                <li  class="navitem"><a href="contact us">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="images/people-business-meeting-office-flat-horizontal_1284-31716.jpg" class="img">
+
+    <section id="Employee registration" class="registerform">
+        <h2>Employee registration</h2>
+        <p>Fill this below form to register as <em>employee.</em></p>
+        <form>
+            <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" id="name"><br><br>
+        <label for="email">Email Id:</label>
+        <input type="text" placeholder="Enter email id" id="email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter passsword" id="password"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Enter your age" id="age"><br><br>
+        <label>Role:</label>
+        <select >
+           <option value="software engineer">software engineer</option>
+           <option value="product manager">product manager</option>
+           <option value="Designer">Designer</option>
+           <option value="HR representative">HR representative</option>
+        </select><br><br>
+        <label for="date">Joining date:</label>
+        <input type="date" id="date"><br><br>
+        <input type="submit">
+        <input type="reset" >
+        </form>
+
+    </section> 
+    <section id="employee directory" class=employeetable>
+        <h2>Employee Directory</h2>
+        <p>Directory of all regestered employees.</p>
+        <table>
+            <tr>
+                
+                <th>Employee Id </th>
+                <th>Employee name</th>
+                <th>Employee role</th>
+            </tr>
+            <tr>
+                <td>83</td>
+                <td>yash</td>
+                <td>software Engineer</td>
+            </tr> 
+            <tr>
+                <td>63</td>
+                <td>yadav</td>
+                <td>product manager</td>
+            </tr> 
+            <tr>
+                <td>45</td>
+                <td>rohit</td>
+                <td>Designer</td>
+            </tr> 
+        </table>
+    </section>
+    <section id="contact us" class="contactus">
+       <h2>contact us</h2>
+       <p>you can contact us at company@official.com or visit us between 9AM - 6PM</p>
+       <iframe src="https://maps.app.goo.gl/ovNGo8FnpS7ry61VA"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Company Name</p>
+    </footer>
+
+    
+</body>
+</html>
